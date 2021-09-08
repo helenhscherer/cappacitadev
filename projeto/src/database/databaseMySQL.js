@@ -1,8 +1,6 @@
 //banco de dados - cadastro de pokemons
 const {databaseConnection} = require('./connection')
 
-const pokemons = {}
-
 //função de salvar/cadastrar os pokemons
 async function salvarPokemons(pokemon) {
     /*
@@ -40,13 +38,21 @@ async function salvarPokemons(pokemon) {
 
 
 //função de mostrar 1 pokemon
-function mostrarPokemon(id) {
-    return pokemons[id] || {}
+async function mostrarPokemon(id) {
+    const querySelectPokemon = `SELECT * FROM cadastro_pokemon WHERE id= ${id}`
+// executar a querySelectPokemon:
+    const result = await databaseConnection.raw(querySelectPokemon)
+
+    return result[0]
 }
 
 //função mostrar todos os pokemons
-function mostrarPokemons() {
-    return Object.values(pokemons)
+async function mostrarPokemons() {
+    const querySelectPokemon = `SELECT * FROM cadastro_pokemon`
+// executar a querySelectPokemon:
+    const result = await databaseConnection.raw(querySelectPokemon)
+
+    return result[0]
 }
 
 //atualizar pokemon
