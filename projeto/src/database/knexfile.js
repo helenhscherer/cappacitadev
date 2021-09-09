@@ -6,7 +6,8 @@ module.exports = {
     user: 'root',
     password: '171020',
     database: 'pokemons'
-}
+},
+debug: false
 }
     
 
