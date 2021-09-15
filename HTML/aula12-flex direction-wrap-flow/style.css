@@ -1,0 +1,13 @@
+.flex-container{
+    background-color: rgb(129, 192, 218);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-item{
+    background-color: orangered;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+
+}

@@ -1,0 +1,12 @@
+h2{
+    background-color: rgb(255, 102, 0); color: black;
+}
+body{
+    background-color: rgb(229, 247, 74);
+}
+div{
+    background-color: tomato; color: whitesmoke;
+    width: 50px;
+    margin: inherit;
+    padding: 5px 5px;
+}

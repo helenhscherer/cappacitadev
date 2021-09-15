@@ -1,0 +1,16 @@
+.flex-container{
+    background-color: lightblue;
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.flex-items{
+    background-color: lightsalmon;
+    font-size: 30px;
+    margin: 5px;
+    padding: 10px;
+    
+}
